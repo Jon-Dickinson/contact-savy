@@ -1,0 +1,238 @@
+.item li:nth-child(3) {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* */
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  max-width: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url('../images/contact_placeholder.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shadow-1--inset:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 99px;
+  height: 99px;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  border-radius: 50%;
+}
+
+.avatar-image {
+  color: transparent;
+}
+
+/* */
+
+.modal {
+  position: relative;
+  z-index: 1500;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-wrapper {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  padding: 20px;
+  margin: 0;
+  transition: all 0.3 ease;
+  width: 100%;
+  max-width: 580px;
+  min-height: 630px;
+  border-radius: 10px;
+}
+
+.modal-header {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.modal-body {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px 35px;
+}
+
+.modal-footer {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  display: inline-block;
+  max-width: 20px;
+  min-width: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  right: 0;
+  top: 0;
+  background-image: url('../images/ic-close@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transform: translate(-50%, -5%);
+  z-index: 500;
+  display: inline-block;
+  max-width: 16px;
+  min-width: 16px;
+  max-height: 16px;
+  min-height: 16px;
+}
+
+.upload-icon:before {
+  content: '';
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  z-index: 400;
+  display: inline-block;
+  max-width: 36px;
+  min-width: 36px;
+  max-height: 36px;
+  min-height: 36px;
+  cursor: pointer;
+  border: 1px solid #e1e1e1;
+  border-radius: 50%;
+}
+
+.upload-icon:after {
+  content: '';
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  z-index: 600;
+  margin-top: 9px;
+  display: inline-block;
+  max-width: 15px;
+  min-width: 15px;
+  max-height: 15px;
+  min-height: 15px;
+  background-image: url('../images/ic-add-blue@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.button-outline--cross {
+  background-color: #ffffff;
+  z-index: 600;
+  display: inline-block;
+  margin: 6px;
+  max-width: 28px;
+  min-width: 28px;
+  max-height: 28px;
+  min-height: 28px;
+  background-image: url('../images/ic-add-blue@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.delete-icon {
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, -5%);
+  z-index: 500;
+  display: inline-block;
+  max-width: 20px;
+  min-width: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  background-image: url('../images/ic-delete@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.back-shed {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+  
+  .avatar {
+    max-width: 70px;
+    min-width: 70px;
+    max-height: 70px;
+    min-height: 70px;
+  }
+
+  .shadow-1--inset:after {
+    width: 69px;
+    height: 69px;
+  }
+
+  .modal-wrapper {
+    transform: translate(-50%, -12.5%);
+  }
+
+  .modal-close {
+    max-width: 16px;
+    min-width: 16px;
+    max-height: 16px;
+    min-height: 16px;
+    background-image: url('../images/ic-close.png');
+  }
+
+  .upload-icon:after {
+    margin-top: 11px;
+    max-width: 12px;
+    min-width: 12px;
+    max-height: 12px;
+    min-height: 12px;
+    background-image: url('../images/ic-add-blue.png');
+  }
+
+}
